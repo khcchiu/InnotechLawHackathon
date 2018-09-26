@@ -3,6 +3,7 @@ import { ResultViewMode } from "../../view-model";
 import { MenuButton } from "../../../../common/components/menu-button";
 import { LogoJFKComponent } from "./../../../../common/components/logo-jfk";
 import { ResultViewModeToggler } from "./view-mode-toggler.component";
+import { SearchComponent } from "../../components/search"
 import AppBar from "material-ui/AppBar";
 import Toolbar from "material-ui/Toolbar";
 
@@ -18,7 +19,7 @@ interface BarProps{
 
 export const PageBarComponent = (props) => {
   return (
-    <AppBar 
+    <AppBar
       classes={{root: style.appbar}}
       color="inherit"
       position="static"
@@ -27,6 +28,13 @@ export const PageBarComponent = (props) => {
         <MenuButton
           className={style.menuButton}
           onClick={props.onMenuClick}
+        />
+        <SearchComponent
+          value={props.searchValue}
+          onSearchSubmit={props.onSearchSubmit}
+          onSearchUpdate={props.onSearchUpdate}
+          suggestionCollection={props.suggestionCollection}
+          resultCount={props.resultCount}
         />
         <LogoJFKComponent classes={{container: style.logoContainer, svg: style.logoSvg}}/>
         <ResultViewModeToggler {...props} />
