@@ -16,7 +16,7 @@ interface SearchProps {
   onSearchUpdate: (value: string) => void;
   resultCount?: number;
   suggestionCollection?: SuggestionCollection;
-  className?: string;  
+  className?: string;
 }
 
 const captureEnter = (props) => (event => {
@@ -30,7 +30,7 @@ const SearchAutocompleteInput = ({searchValue, suggestionCollection, onSearchUpd
     type="search"
     name="searchBox"
     id="searchBox"
-    placeholder="Search ..."
+    placeholder="Translate ..."
     searchValue={searchValue}
     suggestionCollection={suggestionCollection}
     onSearchUpdate={onSearchUpdate}
@@ -63,7 +63,7 @@ const SearchComponent: React.StatelessComponent<SearchProps> = (props) => {
     <div className={cnc(props.className, style.container)}>
       <div className={style.controlContainer}>
         <Icon classes={{root: style.icon}}>&#xe900;</Icon>
-        <SearchAutocompleteInput 
+        <SearchAutocompleteInput
           searchValue={props.value}
           suggestionCollection={props.suggestionCollection}
           onSearchUpdate={props.onSearchUpdate}
@@ -74,10 +74,10 @@ const SearchComponent: React.StatelessComponent<SearchProps> = (props) => {
       {
         props.resultCount !== null ?
           <div className={style.infoContainer}>
-            <ResultCounter count={props.resultCount} />  
+            <ResultCounter count={props.resultCount} />
           </div>
         : null
-      }        
+      }
     </div>
   );
 }
