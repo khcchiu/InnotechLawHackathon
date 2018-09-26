@@ -140,7 +140,7 @@ class ResultAreaComponent extends React.PureComponent<Partial<SearchPageProps>> 
 
 const SearchPageComponent = (props: SearchPageProps) => (
   <div className={style.pageContainer}>
-    {/*<DrawerAreaComponent {...props} />*/}
+    <DrawerAreaComponent {...props} />
     <main className={style.mainContainer}>
       <PageBarComponent
         resultViewMode={props.resultViewMode}

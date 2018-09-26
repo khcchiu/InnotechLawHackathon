@@ -24,17 +24,17 @@ export const PageBarComponent = (props) => {
       color="inherit"
       position="static"
     >
-      {/*<SearchComponent
-        value={props.searchValue}
-        onSearchSubmit={props.onSearchSubmit}
-        onSearchUpdate={props.onSearchUpdate}
-        suggestionCollection={props.suggestionCollection}
-        resultCount={props.resultCount}
-      />*/}
       <Toolbar classes={{root: style.toolbar}} disableGutters={true}>
         <MenuButton
           className={style.menuButton}
           onClick={props.onMenuClick}
+        />
+        <SearchComponent
+          value={props.searchValue}
+          onSearchSubmit={props.onSearchSubmit}
+          onSearchUpdate={props.onSearchUpdate}
+          suggestionCollection={props.suggestionCollection}
+          resultCount={props.resultCount}
         />
         {/*<LogoJFKComponent classes={{container: style.logoContainer, svg: style.logoSvg}}/>*/}
         <ResultViewModeToggler {...props} />
