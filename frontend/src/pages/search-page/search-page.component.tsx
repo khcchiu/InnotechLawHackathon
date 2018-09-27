@@ -60,18 +60,7 @@ const DrawerAreaComponent = (props: SearchPageProps) => (
     onMenuClick={props.onMenuClick}
     onClose={props.onDrawerClose}
   >
-    <SearchComponent
-      value={props.searchValue}
-      onSearchSubmit={props.onSearchSubmit}
-      onSearchUpdate={props.onSearchUpdate}
-      suggestionCollection={props.suggestionCollection}
-      resultCount={props.resultCount}
-    />
-    <FacetViewComponent
-      facets={props.facetCollection}
-      filters={props.filterCollection}
-      onFilterUpdate={props.onFilterUpdate}
-    />
+    <iframe height="400px" src='https://webchat.botframework.com/embed/technolawgy?s=vQn-98RJEgw.cwA.tR8.5NM_FWNCIADFjFBM2suwzRlG1KJ8VCpVVkWMH1ZW2GM'></iframe>
   </DrawerComponent>
 );
 
@@ -108,7 +97,7 @@ class ResultAreaComponent extends React.PureComponent<Partial<SearchPageProps>> 
   render() {
     return (
       <>
-        <PlaceholderComponent />
+
         <SpacerComponent>
           {
             this.props.resultViewMode === "graph" ?
@@ -140,7 +129,7 @@ class ResultAreaComponent extends React.PureComponent<Partial<SearchPageProps>> 
 
 const SearchPageComponent = (props: SearchPageProps) => (
   <div className={style.pageContainer}>
-    {/*<DrawerAreaComponent {...props} />*/}
+    <DrawerAreaComponent {...props} />
     <main className={style.mainContainer}>
       <PageBarComponent
         resultViewMode={props.resultViewMode}

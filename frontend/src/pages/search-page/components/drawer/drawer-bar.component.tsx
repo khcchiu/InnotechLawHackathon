@@ -21,10 +21,12 @@ interface DrawerBarProps {
 const DrawerBarCaption = () => (
   <div className={style.caption}>
     <p className={style.title} color="inherit">
-      Documents revealed.
+      Hi! I am Labot.
     </p>
     <p className={style.subtitle} color="inherit">
-      Let's find out what happened that day.
+      Chat with me to solve your labour law related questions in the Belt & Road Region.
+    </p>
+    <p>
     </p>
   </div>
 );
@@ -50,7 +52,7 @@ const DrawerBarClosedContent = ({onMenuClick}) => (
 export const DrawerBarComponent: React.StatelessComponent<DrawerBarProps> = (props) => {
   const containerStyle = props.viewMode === "open" ? style.container : style.containerClosed;
   return (
-    <Toolbar 
+    <Toolbar
       classes={{root: cnc(props.className, containerStyle)}}
       disableGutters
     >

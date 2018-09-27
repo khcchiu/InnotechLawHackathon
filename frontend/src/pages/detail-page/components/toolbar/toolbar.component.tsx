@@ -34,8 +34,8 @@ export class ToolbarComponent extends React.Component<ToolbarProps, {}> {
     return (
       <Toolbar classes={{ root: style.toolbar }} disableGutters={true}>
         <div className={style.group}>
-          <ToggleViewButton onClick={this.props.onToggleTextClick} />
-          <VerticalSeparator />
+          {/*<ToggleViewButton onClick={this.props.onToggleTextClick} />
+          <VerticalSeparator />*/}
           <OriginalSizeButton
             zoomMode={this.props.zoomMode}
             onClick={this.handleZoomClick("original")}

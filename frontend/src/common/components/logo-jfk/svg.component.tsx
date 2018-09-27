@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const JFKSvg: React.StatelessComponent<Props> = (props) => (
-  <img src="https://image.ibb.co/g3oyP9/Technolawgy_logo.png" />
+  <img src="https://image.ibb.co/cOr8rp/lawlogo.png" />
   /*}<svg
     className={`${styles.logo} ${props.className}`}
     xmlns="http://www.w3.org/2000/svg"

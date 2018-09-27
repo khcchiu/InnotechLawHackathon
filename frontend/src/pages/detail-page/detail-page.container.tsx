@@ -18,10 +18,10 @@ class DetailPageInnerContainer extends React.Component<RouteComponentProps<any>,
 
     this.state = {
       zoomMode: "page-width",
-      showText: true,
+      showText: false,
     };
   }
-  
+
   private handleClose = () => {
     this.props.history.push(searchPath);
   }
@@ -30,7 +30,7 @@ class DetailPageInnerContainer extends React.Component<RouteComponentProps<any>,
     this.setState({
       ...this.state,
       showText: !this.state.showText,
-    });      
+    });
   }
 
   private handleZoomChange = (zoomMode: ZoomMode) => {
@@ -40,7 +40,7 @@ class DetailPageInnerContainer extends React.Component<RouteComponentProps<any>,
   public render() {
     const detailState = getDetailState();
     const pageIndex = Number(this.props.match.params.pageIndex) || undefined;
-    
+
     return (
       <DetailPageComponent
         hocr={detailState.hocr}
@@ -53,7 +53,7 @@ class DetailPageInnerContainer extends React.Component<RouteComponentProps<any>,
         onCloseClick={this.handleClose}
       />
     );
-  }  
+  }
 }
 
 export const DetailPageContainer = withRouter(DetailPageInnerContainer);
