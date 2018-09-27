@@ -60,7 +60,7 @@ const DrawerAreaComponent = (props: SearchPageProps) => (
     onMenuClick={props.onMenuClick}
     onClose={props.onDrawerClose}
   >
-    <iframe height="400px" src='https://webchat.botframework.com/embed/technolawgy?s=vQn-98RJEgw.cwA.tR8.5NM_FWNCIADFjFBM2suwzRlG1KJ8VCpVVkWMH1ZW2GM'></iframe>
+    <iframe height="100%" src='https://webchat.botframework.com/embed/technolawgy?s=vQn-98RJEgw.cwA.tR8.5NM_FWNCIADFjFBM2suwzRlG1KJ8VCpVVkWMH1ZW2GM'></iframe>
   </DrawerComponent>
 );
 

@@ -46,7 +46,7 @@ const SearchButton = ({ onClick }) => (
     color="secondary"
     onClick={onClick}
   >
-    TRANSLATE
+    SEARCH
   </Button>
 );
 
