@@ -140,13 +140,21 @@ class ResultAreaComponent extends React.PureComponent<Partial<SearchPageProps>> 
 
 const SearchPageComponent = (props: SearchPageProps) => (
   <div className={style.pageContainer}>
-    <DrawerAreaComponent {...props} />
+    {/*<DrawerAreaComponent {...props} />*/}
     <main className={style.mainContainer}>
       <PageBarComponent
         resultViewMode={props.resultViewMode}
         pulseToggle={props.pulseToggle}
         onChangeResultViewMode={props.onChangeResultViewMode}
         onMenuClick={props.onMenuClick}
+      />
+      {/*Added SearchComponent here*/}
+      <SearchComponent
+        value={props.searchValue}
+        onSearchSubmit={props.onSearchSubmit}
+        onSearchUpdate={props.onSearchUpdate}
+        suggestionCollection={props.suggestionCollection}
+        resultCount={props.resultCount}
       />
       <HorizontalSeparator />
       <ResultAreaComponent
