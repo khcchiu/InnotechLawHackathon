@@ -1,6 +1,7 @@
 $colorWhite: white;
 $colorBlack: black;
-$colorPrimary: hsl(193, 99%, 57%);
+//$colorPrimary: hsl(193, 99%, 57%);
+$colorPrimary: hsl(173, 42%, 56%);
 $colorPrimaryDark: hsl(210, 100%, 20%);
 $colorPrimaryDarker: hsl(202, 38%, 14%);
 $colorSecondary: hsl(347, 88%, 34%);
@@ -13,8 +14,8 @@ $colorGrey: rgb(236, 236, 236);
 $redStart: hsl(349, 81%, 37%);
 $redEnd: hsl(346, 88%, 20%);
 
-$orangeStart: hsl(41, 100%, 50%);
-$orangeEnd: hsl(41, 100%, 50%);
+$newStart: hsl(26, 79%, 68%);
+$newEnd: hsl(26, 79%, 68%);
 
 @mixin red-gradient {
   // Old browsers
@@ -34,15 +35,15 @@ $orangeEnd: hsl(41, 100%, 50%);
 }
 
 /*Added this color*/
-@mixin orange-gradient {
+@mixin new-gradient {
   // Old browsers
   background: $redStart;
   // FF3.6-15
-  background: -moz-linear-gradient(top, $orangeStart 0%, $orangeEnd 100%);
+  background: -moz-linear-gradient(top, $newStart 0%, $newEnd 100%);
   // Chrome10-25,Safari5.1-6
-  background: -webkit-linear-gradient(top, $orangeStart 0%, $orangeEnd 100%);
+  background: -webkit-linear-gradient(top, $newStart 0%, $newEnd 100%);
   // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-  background: linear-gradient(to bottom, $orangeStart 0%, $orangeEnd 100%);
+  background: linear-gradient(to bottom, $newStart 0%, $newEnd 100%);
   // IE6-9
   filter: progid:DXImageTransform.Microsoft.gradient(
     startColorstr="#a9122d",

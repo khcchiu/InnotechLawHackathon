@@ -6,7 +6,8 @@ interface Props {
 }
 
 export const JFKSvg: React.StatelessComponent<Props> = (props) => (
-  <svg
+  <img src="https://image.ibb.co/g3oyP9/Technolawgy_logo.png" />
+  /*}<svg
     className={`${styles.logo} ${props.className}`}
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -16,7 +17,7 @@ export const JFKSvg: React.StatelessComponent<Props> = (props) => (
     xmlSpace="preserve"
   >
     <text x="-20" y="15" fill="white">Technolawgy</text>
-    {/*<g>
+    <g>
       <g>
         <path className={styles.st0} d={`M42.6,41.2c0.4,0.1,0.8,0.2,1.3,0.1c1.4,0.6,2.9,0.6,4.5,0c0.3,0.3,0.5,0.7,0.8,1.2c0.2-0.3,0.5-0.6,0.9-0.9
 			c0.3,0.3,0.5,0.8,0.8,1.4c-0.1,0.6-0.2,1.3-0.1,2c-1.4-0.3-2.6-0.1-3.4,0.5c-0.8-0.3-1.6-0.2-2.5,0.4l0.3,1.2
@@ -166,6 +167,6 @@ export const JFKSvg: React.StatelessComponent<Props> = (props) => (
 		c0,16.4,6.3,31.8,17.6,43.3c11.3,11.5,26.2,17.9,42.1,17.9c14.4,0,28-5.2,38.8-14.8l29.1,29.9c0.9,0.9,2.1,1.4,3.3,1.4
 		c1.2,0,2.4-0.5,3.3-1.4c1.8-1.8,1.8-4.8,0-6.7L115.3,109.1z M159,153.9l-4.8-4.9c-1.8-1.8-4.7-1.8-6.5,0c-1.8,1.8-1.8,4.8,0,6.7
 		l4.8,4.9c0.9,0.9,2.1,1.4,3.3,1.4c1.2,0,2.3-0.5,3.3-1.4C160.8,158.8,160.8,155.8,159,153.9z`} />
-    </g>*/}
-  </svg>
+    </g>
+  </svg>*/
 )
