@@ -60,7 +60,7 @@ const DrawerAreaComponent = (props: SearchPageProps) => (
     onMenuClick={props.onMenuClick}
     onClose={props.onDrawerClose}
   >
-    <iframe height="100%" src='https://jfk-site-u46v6j3g2ntrm.azurewebsites.net/chatbot-frame.html'></iframe>
+    <iframe height="100%" frameBorder="0" src='https://jfk-site-u46v6j3g2ntrm.azurewebsites.net/chatbot-frame.html'></iframe>
   </DrawerComponent>
 );
 
