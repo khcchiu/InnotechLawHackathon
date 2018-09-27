@@ -6,14 +6,14 @@ const style = require("./footer.style.scss");
 
 const Links = () => (
   <div className={style.linkArea}>
-    <a className={style.link} href="https://technet.microsoft.com/en-US/cc300389.aspx" target="__blank">Terms of Use</a>
-    <a className={style.link} href="https://go.microsoft.com/fwlink/?LinkId=248681" target="__blank">Privacy</a>
+    <a className={style.link} href="" target="__blank">Terms of Use</a>
+    <a className={style.link} href="" target="__blank">Privacy</a>
   </div>
 );
 
 const Statement = () => (
   <div className={style.statementArea}>
-    © Technolawgy 2018
+    Made with ♥ by Technolawgy
   </div>
 );
 
